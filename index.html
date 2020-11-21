@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trideep.works coronaupdates</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #map{
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id='map'></div>
+</body>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+<script src="index.js"></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoidHJpZGVlcHNhcmRhciIsImEiOiJja2Q1dHlsb3IwM3NmMnFtYjd3MGRic3Y3In0.oQQZR5Q0X-KTq5z7PcHGKQ';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10'
+  });
+</script>
+
+</html>
